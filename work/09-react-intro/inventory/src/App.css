@@ -1,0 +1,24 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.inventory-count {
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.button {
+  padding: 5px 10px;
+  font-size: 16px;
+}

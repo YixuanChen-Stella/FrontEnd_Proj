@@ -1,0 +1,41 @@
+.button-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+
+.btn-regular {
+    background-color: darkgreen;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-regular:hover {
+    background-color: #65e365;
+}
+
+.btn-link {
+    color: black;
+    text-decoration: underline;
+    padding: 0;
+}
+
+.btn-link:hover {
+    color: green;
+}
+
+.click-feedback {
+    font-size: 0.875rem;
+    color: #b7e1b7;
+}

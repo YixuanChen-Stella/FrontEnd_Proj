@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="logo.jpg" alt="A British Short-hair Blue cat" />
+    </a>
+    <nav>
+        <ul class="Menu">
+            <li>
+                <a href="https://www.menu.com">Menu</a>
+                <ul class="dropdown">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="External Links">
+            <li>
+                <a href="https://www.externallinks.com">External Links</a>
+                <ul class="dropdown">
+                    <li><a href="https://www.wikipedia.org/wiki/Cat">About Cat</a></li>
+                    <li><a href="https://basepaws.com/cat-breeds">Types of Cats</a></li>
+                    <li><a href="https://www.seattlehumane.org">Adopt a Cat</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>Register</h1>
+    <form action="/register" method="POST">
+        <label for="name">Name <span class="required">*</span> (required)</label>
+        <input type="text" id="name" name="name" required aria-required="true">
+
+        <label for="email">Email <span class="required">*</span> (required)</label>
+        <input type="email" id="email" name="email" required aria-required="true">
+
+        <label for="contact_method">Preferred Contact Method <span class="required">*</span> (required)</label>
+        <select id="contact_method" name="contact_method" required aria-required="true">
+            <option value="">Please select</option>
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="sms">SMS</option>
+        </select>
+        <div class="checkbox-row">
+            <label for="subscribe-events">Subscribe to our latest events</label>
+            <input type="checkbox" id="subscribe-events" name="latest-events" value="yes">
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+</main>
+<footer>
+    <p>&copy; <a href="https://www.footer.com/privacy" target="_blank">Privacy</a></p>
+</footer>
+</body>
+</html>

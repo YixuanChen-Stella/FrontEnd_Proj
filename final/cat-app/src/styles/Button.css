@@ -1,0 +1,33 @@
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-light {
+  background-color: rgb(243, 200, 116); 
+  color: #ffffff;
+}
+
+.btn-dark {
+  background-color: rgb(243, 200, 116); 
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .btn {
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .btn-light:hover {
+    background-color: rgb(176, 122, 14); 
+    transform: scale(1.05);
+  }
+
+  .btn-dark:hover {
+    background-color: rgb(176, 122, 14);; 
+    transform: scale(1.05);
+  }
+}

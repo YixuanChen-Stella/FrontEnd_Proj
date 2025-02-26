@@ -1,0 +1,30 @@
+Image: 1.jpg
+Copyright [2024] [Yixuan Chen]
+
+Image: 2.jpg
+Copyright [2024] [Yixuan Chen]
+
+Image: 3.jpg
+Copyright [2024] [Yixuan Chen]
+
+Image: 4.jpg
+Copyright [2024] [Yixuan Chen]
+
+Image: 5.jpg
+Copyright [2024] [Yixuan Chen]
+
+Image: 6.jpg
+Copyright [2024] [Yixuan Chen]
+
+Image: 7.jpg
+Copyright [2024] [Yixuan Chen]
+
+Image: 8.jpg
+Copyright [2024] [Yixuan Chen]
+
+Image: 9.jpg
+Copyright [2024] [Yixuan Chen]
+
+Icon: icon.svg
+Source: https://fonts.google.com/icons
+Copyright © Google

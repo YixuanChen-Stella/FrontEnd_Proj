@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#homepage {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+        "header header"
+        "menu main"
+        "footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: plum;
+/* <<<<<<< responsive-grid
+    line-height: 40px; */
+    line-height: 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.menu li {
+    display: flex;
+    position: relative;
+/* <<<<<<< responsive-grid
+    padding: 10px; */
+    transition: color 0.1s, background-color 0.1s;
+}
+
+.local-menu {
+    grid-area: menu;
+    background-color: pink;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.local-menu li {
+    position: relative;
+    display: flex;
+/* <<<<<<< responsive-grid
+    margin-top: 10px; */
+    padding: 16px;
+}
+
+.local-menu li:first-child {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.local-menu li:first-child {
+    margin-top: 11px;
+}
+
+main {
+    grid-area: main;
+    background-color: pink;
+    border-left: 1px solid black;
+}
+
+footer {
+    grid-area: footer;
+    background-color: plum;
+    line-height: 50px;
+    text-align: left;
+    padding: 10px;
+    color: black;
+}
+
+p {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+/* <<<<<<< responsive-grid
+.primary-nav.menu li a, .local-menu li a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+======= */
+.menu li a, .local-menu li a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.menu li a{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+.local-menu li a {
+    color: blue;
+    text-decoration: underline;
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+}
+
+.local-menu li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5%;
+    height: 100%;
+    background-color: pink;
+}
+
+.menu li:hover {
+    background-color: rebeccapurple;
+}
+
+.menu li:hover a {
+    color: white;
+}
+
+.local-menu li:hover {
+    background-color: plum;
+}
+

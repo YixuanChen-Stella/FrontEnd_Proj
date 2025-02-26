@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    min-height: calc(100vh - 100px); 
+    display: flex;
+    align-items: center; 
+}
+
+.site-header {
+    background-color: green;
+    color: white;
+    padding: 1rem;
+}
+
+.site-header h1 {
+    margin: 0;
+}
+
+.main-nav {
+    position: relative;
+}
+
+.menu-toggle {
+    background-color: white;
+    border: none;
+    color: black;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-menu {
+    background-color: rgb(57, 78, 57);
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+}
+
+.dropdown-menu.open {
+    display: block;
+}
+
+.dropdown-menu li {
+    border-top: 1px solid #555;
+}
+
+.dropdown-menu a {
+    color: white;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+    background-color:rgb(1, 21, 1);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.card {
+    background-color: rgb(213, 233, 213);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: calc(33.333% - 1rem);
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.site-footer p {
+    color: white;
+    margin: 0;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,26 @@
+
+.adoption-page {
+  position: relative;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.adoption-page .btn-light {
+  position: relative;
+  z-index: 10;
+}
+

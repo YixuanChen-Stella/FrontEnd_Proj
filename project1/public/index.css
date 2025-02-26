@@ -1,0 +1,131 @@
+main {
+    padding: 10px;
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+h1 {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    background-color: rgb(192, 213, 192);
+    grid-column: 1 / -1;
+    font-size: 3.5vw;
+    border-radius: 10px;
+    text-align: left;
+    width: 14%;
+}
+
+.Cats-in-the-News h2, .Famous-Historical-Cats h2 {
+    padding: 0 5px 0 5px;
+    grid-column: 1 / -1;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 2.7vw;
+    background-color: rgb(208, 223, 208);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.Cats-in-the-News, .Famous-Historical-Cats {
+    padding: 0 20px;
+    display: grid;
+    gap: 0.5rem;
+    grid-column: 1 / -1;
+}
+
+.Cats-in-the-News .card, .Famous-Historical-Cats .card {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Cats-in-the-News .card {
+    grid-column: span 4;
+    font-size: 2.6vw;
+}
+
+.Famous-Historical-Cats .card {
+    grid-column: span 3;
+    font-size: 2.6vw;
+}
+
+.Cats-in-the-News .card h3, .Famous-Historical-Cats .card h3 {
+    margin-top: 0;
+    font-size: 2.5vw;
+}
+
+.card p {
+    font-size: 2.5vw;
+}
+
+.card a {
+    font-size: 2.5vw;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card:nth-child(1) { background-color: #E1F5FE; }
+.card:nth-child(2) { background-color: #FFEBEE; }
+.card:nth-child(3) { background-color: #F1F8E9; }
+.card:nth-child(4) { background-color: #FFF3E0; }
+.card:nth-child(5) { background-color: #E8F5E9; }
+.card:nth-child(6) { background-color: #E0F7FA; }
+.card:nth-child(7) { background-color: #F3E5F5; }
+
+@media (min-width: 50rem) {
+    h1 {
+        padding-left: 10px;
+        grid-column: 1 / -1;
+        width: 11%;
+        font-size: 2vw;
+    }
+
+    .Cats-in-the-News h2, .Famous-Historical-Cats h2 {
+        padding-left: 10px;
+        grid-column: 1 / -1;
+        width: 27%;
+        font-size: 1.8vw;
+    }
+
+    .Cats-in-the-News {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .Famous-Historical-Cats {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .Cats-in-the-News .card {
+        grid-column: span 4;
+    }
+
+    .Famous-Historical-Cats .card {
+        grid-column: span 3;
+    }
+
+    .Cats-in-the-News .card h3, .Famous-Historical-Cats .card h3 {
+        margin-top: 0;
+        font-size: 1.5vw;
+    }
+
+    .card {
+        font-size: 1.0vw;
+    }
+
+    .card p {
+        font-size: 1.3vw;
+    }
+
+    .card a {
+        font-size: 1.2vw;
+    }
+}

@@ -1,0 +1,131 @@
+.shopping-cart {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 300px;
+  background-color: #fff;
+  color: #000;
+}
+
+.shopping-cart h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.shopping-cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shopping-cart li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.shopping-cart button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.shopping-cart .total-price {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.dark-mode .shopping-cart {
+  background-color: #333;
+  color: #fff;
+  border-color: #444;
+}
+
+.dark-mode .shopping-cart button {
+  background-color: #e57373;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .shopping-cart button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .shopping-cart button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+  }
+
+  .dark-mode .shopping-cart button:hover {
+    background-color: #ef5350;
+  }
+}
+
+.payment {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #f9f9f9;
+}
+
+.payment h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 0.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.payment button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.dark-mode .payment {
+  background-color: #444;
+  color: #fff;
+  border-color: #555;
+}
+
+.dark-mode .payment h3,
+.dark-mode .form-group label {
+  color: #fff;
+}
+
+.dark-mode .form-group input {
+  background-color: #555;
+  color: #fff;
+  border-color: #666;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .payment button {
+    transition: background-color 0.3s ease;
+  }
+
+  .payment button:hover {
+    background-color: #45a049;
+  }
+}

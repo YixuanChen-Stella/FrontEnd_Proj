@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*max-width: 1000px;*/
+    /*margin: 0 auto;*/
+}
+
+header {
+    background-color: green;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+main {
+    padding: 50px;
+    width: 100%;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: red;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.required:after {
+    content: " *";
+    color: red;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 2px;
+}
+
+.checkbox-row label {
+    margin-right: 5px;
+    width: 80%;
+}
+
+.checkbox-row input {
+    margin-right: 5px;
+    width: 20%;
+}
+
+button {
+    font-size: 1rem;
+    width: 15%;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 0;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    height: 25px;
+}
+
+button:hover {
+    background-color: greenyellow;
+}
+
+.error-message {
+    display: none;
+    margin-top: 5px;
+}
+
+input:required:invalid ~ .error-message, select:required:invalid ~ .error-message {
+    display: none;
+    margin-top: 5px;
+}
+
+input:required:invalid {
+    /*border-color: darkolivegreen;*/
+    margin-top: 5px;
+}
+
+input, select {
+    /*width: 100%;*/
+    /*border-color: darkolivegreen;*/
+    padding: 8px;
+    margin-top: 5px;
+}
+
+@media (min-width: 50rem) {
+    .form-field {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    .form-field label {
+        width: 20%;
+        margin-right: 10px;
+    }
+
+    .form-field input {
+        width: 80%;
+    }
+
+    .form-field select {
+        width: 80%;
+    }
+
+    .checkbox-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .checkbox-row label {
+        width: 40%;
+        margin-right: 10px;
+    }
+
+    .checkbox-row input {
+        width: 10%;
+        margin-left: 0;
+    }
+}
+

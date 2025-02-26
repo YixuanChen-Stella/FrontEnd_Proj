@@ -1,0 +1,38 @@
+Image: Latte.jpg
+https://unsplash.com/s/photos/latte
+
+Image: Espresso.jpg
+https://unsplash.com/photos/glass-cup-filled-with-ice
+
+Image: AppleJuice.jpg
+https://unsplash.com/photos/apple-juice
+
+Image: OrangeJuice.jpg
+https://unsplash.com/s/photos/orangejuice
+
+Image: Cheesecake.jpg
+https://unsplash.com/s/photos/cheesecake
+
+Image: Brownie.jpg  
+https://unsplash.com/s/photos/brownie
+
+Image: Mittens.jpg, Tiger.jpg, Shadow.jpg, Whiskers.jpg
+https://unsplash.com/s/photos/cat
+
+Image: cat3.jpg
+https://unsplash.com/s/photos/kitten
+
+Image: logo.jpg 
+http://unsplash.com/caffee-logo
+
+Image: cat1.jpg, cat2.jpg
+Copyright [2024] [Yixuan Chen]
+
+Icon: icon.svg
+Source: https://fonts.google.com/icons
+
+Icon: day.svg
+Source: https://fonts.google.com/icons
+
+Icon: night.svg
+Source: https://fonts.google.com/icons

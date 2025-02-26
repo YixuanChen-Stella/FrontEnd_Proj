@@ -1,0 +1,30 @@
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 16px;
+    width: 100%;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 50rem) {
+    .content-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .carousel-container,
+    .accordion-container {
+        grid-column: span 1; 
+    }
+} 

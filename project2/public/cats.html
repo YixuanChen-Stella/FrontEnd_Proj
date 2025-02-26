@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cats.css">
+    <link rel="stylesheet" href="common.css">
+    <title>Home</title>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header>
+    <div class="header-top">
+        <div class="logo">
+            <img src="4.jpg" alt="logo" width="100" height="100">
+        </div>
+        <h1>Cats Power the Internet</h1>
+        <div class="hamburger-icon" tabindex="0" aria-label="Toggle navigation menu">
+            <img src="icon.svg" alt="Toggle navigation menu icon">
+        </div>
+    </div>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cats.html">Famous Cats</a></li>
+            <li><a href="catevents.html">Cat Events</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="main-content">
+    <div class="card-container">
+        <div class="cat-card">
+            <h2>Tommy</h2>
+            <img src="5.jpg" alt="Description of Tommy" width="200" height="200">
+            <p>Tommy is a good cat. He likes fish and chicken. Click <a href="sub.html" class="subscribe-link">Subscribe</a> to learn more!</p>
+        </div>
+        <div class="cat-card">
+            <h2>Jerry</h2>
+            <img src="7.jpg" alt="Description of Jerry" width="200" height="200">
+            <p>Jerry is so cute and she is very friendly to human especially to kids. Click <a href="sub.html" class="subscribe-link">Subscribe</a> to learn more!</p>
+        </div>
+        <div class="cat-card">
+            <h2>Larry</h2>
+            <img src="9.jpg" alt="Description of Larry" width="200" height="200">
+            <p>Larry is cool and calm. Click <a href="sub.html" class="subscribe-link">Subscribe</a> to learn more!</p>
+        </div>
+        <div class="cat-card">
+            <h2>Alsa</h2>
+            <img src="6.jpg" alt="Description of Alsa" width="200" height="200">
+            <p>Alsa is a little bit fat, and we are still getting to know her. Click <a href="sub.html" class="subscribe-link">Subscribe</a> to learn more!</p>
+        </div>
+        <div class="cat-card">
+            <h2>Sinba</h2>
+            <img src="8.jpg" alt="Description of Sinba" width="200" height="200">
+            <p>Sinba is really quiet and suitable to be adopted in an apartment. Click <a href="sub.html" class="subscribe-link">Subscribe</a> to learn more!</p>
+        </div>
+        <div class="cat-card">
+            <h2>Jort</h2>
+            <img src="1.jpg" alt="Description of Jort" width="200" height="200">
+            <p>Jort likes eating snacks and do not feed him too much! Click <a href="sub.html" class="subscribe-link">Subscribe</a> to learn more!</p>
+        </div>
+    </div>
+</main>
+
+<div class="modal" id="subscribeModal">
+    <div class="modal-content">
+        <h2>Subscribe!</h2>
+        <form id="subscribeForm">
+            <label for="email">Email: <span>* (required)</span></label>
+            <input type="text" id="email" required>
+            <span class="error-message" id="emailError"></span>
+
+            <label for="confirmEmail">Confirm Email: <span>* (required)</span></label>
+            <input type="text" id="confirmEmail" required>
+            <span class="error-message" id="confirmEmailError"></span>
+
+            <div class="modal-footer">
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+                <button type="button" class="subscribe-btn" id="cancelModal">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="work.html">Work for Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="socialmedia.html">Social Media</a></li>
+    </ul>
+</footer>
+<script src="cats.js"></script>
+</body>
+</html>

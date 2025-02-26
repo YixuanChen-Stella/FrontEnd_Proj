@@ -1,0 +1,130 @@
+h1 {
+    margin: 20px 0;
+    padding-left: 10px;
+    font-size: 4.7vw;
+    background-color: rgb(192, 213, 192);
+    width: 27%;
+    border-radius: 10px;
+}
+
+main {
+    margin: 0 30px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 100%;
+    gap: 1rem;
+    padding: 30px 50px;
+    background-color: rgb(208, 223, 208);
+    margin-bottom: 20px;
+    font-size: 3.5vw;
+}
+
+label {
+    grid-column: span 12;
+    text-align: left;
+}
+
+input, select, button {
+    grid-column: span 12;
+    padding: 10px;
+    font-size: 2.5vw;
+}
+
+.checkbox-row {
+    grid-column: span 12;
+    display: contents;
+}
+
+.checkbox-row label {
+    grid-column: span 6;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-row input {
+    grid-column: span 6;
+    width: 15px;
+    justify-self: start;
+    align-self: center;
+}
+
+button {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    grid-column: span 12;
+}
+
+button:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.required {
+    color: red;
+}
+
+label.required:after {
+    content: " *  (required)";
+    color: red;
+}
+
+.required-label {
+    font-weight: bold;
+}
+
+@media (min-width: 50rem) {
+    h1 {
+        font-size: 2vw;
+        width: 12%;
+    }
+
+    form {
+        font-size: 1.5vw;
+    }
+
+    label {
+        grid-column: span 12;
+        text-align: left;
+    }
+
+    input, select, button {
+        grid-column: span 12;
+        padding: 10px;
+        justify-self: start;
+        width: 100%;
+        font-size: 1.5vw;
+    }
+
+    .checkbox-row {
+        grid-column: span 12;
+        display: contents;
+    }
+
+    .checkbox-row label {
+        grid-column: span 4;
+        display: flex;
+        align-items: center;
+    }
+
+    .checkbox-row input {
+        grid-column: span 6;
+        width: 20px;
+        justify-self: start;
+        align-self: center;
+    }
+
+    button {
+        background-color: darkgreen;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+        grid-column: span 12;
+    }
+}
